@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: 'Do something and be happy'
+inputs:
+  what-to-do: # input id
+    description: "Action to do"
+    required: true
+    default: 'Walk'
+outputs:
+  day: # output id
+    description: 'Day we did something nice'
+runs:
+  using: 'node12'
+  main: 'index.js'
