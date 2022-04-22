@@ -12,4 +12,6 @@ jobs:
         what-to-do: "Walk on the beach"
     # Use the ouput from the hello step
     - name: Get the output day
-      run: echo "The day was ${{ steps.hello.outputs.day }}"
+      run: |
+        echo "The day was ${{ steps.hello.outputs.day }}"
+        echo "une deuxieme ligne, bravo!"
